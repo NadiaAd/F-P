@@ -1,0 +1,39 @@
+.all-oils {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 90vh;
+    margin-top: 500px;
+  }
+  
+  .all-oils h1 {
+    color: #0D5959;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .all-oils hr {
+    width: 100px;
+    height: 6px;
+    border-radius: 10px;
+    background: #0D5959;
+  }
+  
+  .oils {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;           
+  }
+  
+  .oil-image-container img {
+    width: 300px; /* Adjusted the width */
+    height: 300px; /* Adjusted the height */
+    margin: 0 10px; /* Adjusted the left and right margins */
+    /*display: flex;*/
+    
+  }

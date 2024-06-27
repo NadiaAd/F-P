@@ -1,0 +1,44 @@
+/* Rejuvanate.css */
+.rejuvanate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 90vh;
+  }
+  
+  .rejuvanate h1 {
+    color: #0D5959;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .rejuvanate hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #0D5959;
+  }
+  
+  .rejuvanate-item {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px; 
+    margin-left: 20px;
+    margin-right: 20px; 
+  }
+  
+  .rejuvanate-item .item {
+    width: 300px; /* Added flex properties to control item width */
+    margin: 0 10px;
+    gap: 20px;
+    
+}
+  
+  .rejuvanate-item .item img {
+    width: 300px; /* Adjusted the width to fill the container */
+    height: 300px;
+  }
+  

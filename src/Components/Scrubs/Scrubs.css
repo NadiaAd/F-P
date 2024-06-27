@@ -1,0 +1,38 @@
+.scrubs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 90vh;
+    margin-top: 50px; /* Adjusted the margin */
+  }
+  
+  .scrubs h1 {
+    color: #0D5959;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .scrubs hr {
+    width: 100px;
+    height: 6px;
+    border-radius: 10px;
+    background: #0D5959;
+  }
+  
+  .scrub {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px; /* Adjusted the margin */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .scrubs-image-container img {
+    width: 300px; /* Adjusted the width */
+    height: 300px; /* Adjusted the height */
+    /* Added to maintain aspect ratio */
+    /* Added for rounded corners */
+  }

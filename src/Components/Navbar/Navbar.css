@@ -1,0 +1,148 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 -1px 0.3s ease-in-out;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.white-bg {
+  background-color: white;
+  box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo p {
+  font-size: 28px;
+  font-weight: 600;
+  transition: color 0.3s ease; /* Added transition property */
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-menu li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: #0D5959;
+  cursor: pointer;
+  position: relative; /* Added for the underline effect */
+}
+
+/* Remove the underline style from here */
+
+.nav-menu li:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: cornsilk;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.nav-menu li:hover::before {
+  transform-origin: bottom left;
+}
+
+.nav-shopping-bag {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 40px;
+
+}
+
+.nav-shopping-bag button {
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #0D5959;
+  border-radius: 75px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Added transition property */
+}
+
+.nav-shopping-bag button:active {
+  background-color: white;
+  color: #0D5959;
+}
+
+.nav-bag-count {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -35px;
+  margin-right: 40px;
+  border-radius: 11px;
+  gap: 0px;
+  font-size: 14px;
+  background: #0D5959;
+  color: white;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+}
+
+.bag {
+  width: 40px;
+  height: 40px;
+}
+
+/* Added styles for scrolling */
+.navbar.scrolling {
+  background-color: white;
+}
+
+.navbar.scrolling .nav-logo p {
+  color: black;
+}
+
+.navbar.scrolling .nav-menu {
+  color: black;
+}
+
+.navbar.scrolling .nav-shopping-bag button {
+  border: 1px solid black;
+}
+
+.navbar.scrolling .nav-shopping-bag button:active {
+  color: white;
+  background-color: #0D5959;
+}
+
+
